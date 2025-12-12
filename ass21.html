@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb On Off</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background 0.3s;
+        }
+        .container {
+            text-align: center;
+            background: #ccc;
+            padding: 50px;
+            border-radius: 20px;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+        img {
+            width: 170px;
+            height: auto;
+        }
+        button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button.on {
+            background-color: #EB8317;
+        }
+        .container.on {
+            background: #FFF6B3;
+        }
+        body.on {
+            background-color: #F6C794;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
     <div class="container" id="box">
