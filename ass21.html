@@ -59,5 +59,27 @@
         <br>
         <button type="button" id="toggleBtn" onclick="toggleBulb()">Toggle</button>
     </div>
+    <script>
+        const bulbElement = document.getElementById('bulb');
+        const container = document.getElementById('box');
+        const button = document.getElementById('toggleBtn');
+        const body = document.getElementById('page');
+        let state = false;
+        function toggleBulb() {
+            if (!state) {
+                bulbElement.src = 'on.png';
+                container.classList.add('on');
+                button.classList.add('on');
+                body.classList.add('on');
+                state = true;
+            } else {
+                bulbElement.src = 'off.png';
+                container.classList.remove('on');
+                button.classList.remove('on');
+                body.classList.remove('on');
+                state = false;
+            }
+        }
+    </script>
 </body>
 </html>
